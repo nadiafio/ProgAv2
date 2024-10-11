@@ -6,11 +6,13 @@ El cliente enviará los pedidos, los cuales serán encolados en el sistema (Brok
 
 ## Tareas a Desarrollar:
 
-- **Setup con Spring Boot**: Iniciaremos un proyecto en Java Spring Boot, se construye una API REST que gestione los pedidos encolados.
+### Setup con Spring Boot: 
+Iniciaremos un proyecto en Java Spring Boot, se construye una API REST que gestione los pedidos encolados.
 
 **Esfuerzo estimado**: 1 punto
 
-- **Definir la clase Order**:  Se crearan la clases correspondiente para la estructura que contendrá los pedidos. Debera tener atributos como:
+### Definir la clase Order:
+Se crearan la clases correspondiente para la estructura que contendrá los pedidos. Debera tener atributos como:
 - `ID del pedido`
 - `Nombre del cliente`
 - `Dirección de entrega`
@@ -20,7 +22,8 @@ La clase tendrá un constructor que automáticamente asigne la fecha de creació
 
 **Esfuerzo estimado**: 1 punto
 
-- **Crear el service DeliveryQueueService**: El servicio DeliveryQueueService gestionará las operaciones de la cola, siguiendo lógica del negocio. Tendrá los siguientes métodos:
+### Crear el service DeliveryQueueService: 
+El servicio DeliveryQueueService gestionará las operaciones de la cola, siguiendo lógica del negocio. Tendrá los siguientes métodos:
 - `addOrder`: Agrega un nuevo pedido a la cola
 - `getAllOrders`: Devuelve todos los pedidos en la cola, para saber cuales siguen pendientes y cuales no.
 - `acquireOrders`: Obtiene el primer pedido de la cola por su ID y cambia su estado a ACQUIRED (es decir, el pedido está en proceso).
@@ -42,5 +45,5 @@ Archiva (y elimina) el primer pedido en la cola, cuando la entrega ya se complet
 
 **Esfuerzo estimado**: 3 puntos
 
-**Total esfuerzo estimado**: 7 puntos, lo que corresponderia a 7 dias de trabajo
+### **Total esfuerzo estimado**: 7 puntos, lo que corresponderia a 7 dias de trabajo
 
